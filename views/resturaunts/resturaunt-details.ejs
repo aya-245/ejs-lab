@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/resturaunts-datails.css"></head>
+<body>
+    <%- include("../partials/navbar") %>
+    <h1>Resturaunt Details</h1>
+    <div class="main">
+        <p>Name: <%= resturaunts.name%></p>
+        <p>Address: <%= resturaunts.address%></p>
+        <% if(resturaunts.isOpen === true){ %>
+            <p id="open">Opening Status: We are Open!</p>
+        <% } else{ %>
+            <p id="closed">Opening Status: We are not open at the moment, come back later!</p>
+        <% } %>
+        <p>Phone Number: <%= resturaunts.phone%></p>
+
+    <h2>Menu: </h2>
+        <% for( let i=0; i<3; i++){ %>
+        <div class="menu">
+            <p class="item-name"><%= resturaunts.menu[i].name %></p>
+            <p>Price: <%= resturaunts.menu[i].price %> bhd</p>
+            <p>Rating: <%= resturaunts.menu[i].rating %></p>
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>

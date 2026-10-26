@@ -1,0 +1,69 @@
+body {
+    background-image: url("/esj-lab-background.png");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ADBA5D;
+    height: 100px;
+    font-weight: bold;
+    border: 1px solid #ADBA5D;
+    border-radius: 8px;
+    margin: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    color: #FEFEFE;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    margin: 30px 0 20px;
+    color: #3b3b3b;
+    -webkit-text-stroke: 1px #fff; /* adding an outline to the header */
+}
+
+.main {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 28px 32px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 2px solid #ADBA5D;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #3b3b3b;
+}
+
+.main p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.main h2 {
+    margin: 24px 0 12px;
+    padding-top: 16px;
+    border-top: 1px solid #ADBA5D;
+    color: #3b3b3b;
+}
+
+#open { 
+    background: #5a9e4b; 
+}
+
+#closed {
+    background: #c0504d;
+}
+
+.item-name {
+  background: #f6f8ec;
+  border-left: 4px solid #ADBA5D;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+}
